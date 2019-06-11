@@ -141,6 +141,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bx-Rn-zJ7" userLabel="Rope">
                                 <rect key="frame" x="189" y="327" width="170" height="139"/>
                                 <state key="normal" image="RopeButton"/>
+                                <connections>
+                                    <segue destination="33v-zy-2di" kind="show" id="EvO-aq-W1D"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ball!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1z-cm-Kij">
                                 <rect key="frame" x="84" y="485" width="59" height="36"/>
@@ -181,6 +184,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDC-79-Fdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1757.5999999999999" y="-304.4977511244378"/>
+        </scene>
+        <!--Dog Part 3- Rope-->
+        <scene sceneID="wKq-1D-3rS">
+            <objects>
+                <viewController title="Dog Part 3- Rope" id="33v-zy-2di" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4lk-2L-R0F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Woohoo! You're puppy is having a ton of fun with the rope! Great choice!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZ0-dI-yYA">
+                                <rect key="frame" x="16" y="118" width="343" height="146"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogRope" translatesAutoresizingMaskIntoConstraints="NO" id="uei-FX-htk">
+                                <rect key="frame" x="0.0" y="250" width="359" height="225"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBB-dn-Zr6">
+                                <rect key="frame" x="316" y="591" width="41" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.74953149240000005" blue="0.35813811940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.99487024199999996" green="1" blue="0.1637920246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0Pj-2X-qzN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EZ0-dI-yYA" firstAttribute="top" secondItem="5oY-Uf-ox1" secondAttribute="top" constant="98" id="7gS-fB-aK9"/>
+                            <constraint firstItem="5oY-Uf-ox1" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gBB-dn-Zr6" secondAttribute="trailing" symbolic="YES" id="Gjz-QR-vZX"/>
+                            <constraint firstItem="gBB-dn-Zr6" firstAttribute="top" secondItem="uei-FX-htk" secondAttribute="bottom" constant="116" id="LbS-Xq-D7a"/>
+                            <constraint firstItem="uei-FX-htk" firstAttribute="leading" secondItem="4lk-2L-R0F" secondAttribute="leading" id="Lts-TH-bg5"/>
+                            <constraint firstItem="uei-FX-htk" firstAttribute="trailing" secondItem="EZ0-dI-yYA" secondAttribute="trailing" id="RKC-h1-OTh"/>
+                            <constraint firstItem="5oY-Uf-ox1" firstAttribute="trailing" secondItem="EZ0-dI-yYA" secondAttribute="trailing" constant="16" id="XlW-mu-ZCR"/>
+                            <constraint firstItem="5oY-Uf-ox1" firstAttribute="bottom" secondItem="uei-FX-htk" secondAttribute="bottom" constant="192" id="jh7-oZ-TxP"/>
+                            <constraint firstItem="5oY-Uf-ox1" firstAttribute="bottom" secondItem="EZ0-dI-yYA" secondAttribute="bottom" constant="403" id="la4-G4-Iwv"/>
+                            <constraint firstItem="gBB-dn-Zr6" firstAttribute="leading" secondItem="uei-FX-htk" secondAttribute="trailing" constant="-43" id="pte-0O-feS"/>
+                            <constraint firstItem="EZ0-dI-yYA" firstAttribute="leading" secondItem="5oY-Uf-ox1" secondAttribute="leading" constant="16" id="u6s-Um-0f0"/>
+                            <constraint firstItem="uei-FX-htk" firstAttribute="top" secondItem="5oY-Uf-ox1" secondAttribute="top" constant="230" id="w6B-cD-D6Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5oY-Uf-ox1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1a-kJ-uPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600.8000000000002" y="-49.025487256371818"/>
         </scene>
         <!--Dog Part 2- Ball-->
         <scene sceneID="YjW-gG-RnB">
@@ -236,7 +288,11 @@
         <image name="BallButton" width="490" height="490"/>
         <image name="CatButton" width="203" height="248"/>
         <image name="DogButton" width="189" height="266"/>
+        <image name="DogRope" width="500" height="367"/>
         <image name="Playing" width="1300" height="1033"/>
         <image name="RopeButton" width="235" height="215"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0Pj-2X-qzN"/>
+    </inferredMetricsTieBreakers>
 </document>
