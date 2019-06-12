@@ -13,12 +13,18 @@ class CharacterViewController: UIViewController {
 
     @IBOutlet weak var instuctionLabel: UILabel!
     let backgroundImageView = UIImageView()
+    let message: String = "Welcome to the the pet store! What pet would you like to get?"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         backgroundImageView.setBackground(imageName: "earth", backgroundImageView:
             backgroundImageView, view: view)
+        instuctionLabel.text = ""
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        instuctionLabel.animateLabel(Message: message, myLabel: instuctionLabel)
     }
     
 

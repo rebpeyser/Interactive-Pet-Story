@@ -13,12 +13,18 @@ class DogPart3ViewController: UIViewController {
 
     @IBOutlet weak var dogPart3Label: UILabel!
     let backgroundImageView = UIImageView()
+    let message: String = "Woohoo! Your puppy is having a ton of fun with the rope! Great choice!"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         backgroundImageView.setBackground(imageName: "mars", backgroundImageView:
             backgroundImageView, view: view)
+        dogPart3Label.text = ""
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        dogPart3Label.animateLabel(Message: message, myLabel: dogPart3Label)
     }
     
 

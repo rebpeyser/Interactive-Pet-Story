@@ -13,12 +13,18 @@ class CatPart1ViewController: UIViewController {
 
     @IBOutlet weak var catPart1Label: UILabel!
     let backgroundImageView = UIImageView()
+    let message: String = "Wow! Such a cute kitten!! To get started, what toy do you want to get?"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         backgroundImageView.setBackground(imageName: "earth", backgroundImageView:
             backgroundImageView, view: view)
+        catPart1Label.text = ""
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        catPart1Label.animateLabel(Message: message, myLabel: catPart1Label)
     }
     
 

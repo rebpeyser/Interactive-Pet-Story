@@ -20,6 +20,7 @@
 		974A6BA422B0963200CD75B5 /* CatPart3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A6BA322B0963200CD75B5 /* CatPart3ViewController.swift */; };
 		974A6BA622B0987A00CD75B5 /* BackgroundExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A6BA522B0987900CD75B5 /* BackgroundExtension.swift */; };
 		974A6BA822B09D4A00CD75B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 974A6BA722B09D4A00CD75B5 /* Assets.xcassets */; };
+		974A6BAA22B0A1BB00CD75B5 /* AnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A6BA922B0A1BB00CD75B5 /* AnimationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		974A6BA322B0963200CD75B5 /* CatPart3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPart3ViewController.swift; sourceTree = "<group>"; };
 		974A6BA522B0987900CD75B5 /* BackgroundExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundExtension.swift; sourceTree = "<group>"; };
 		974A6BA722B09D4A00CD75B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		974A6BA922B0A1BB00CD75B5 /* AnimationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				974A6B9F22B0958A00CD75B5 /* CatPart1ViewController.swift */,
 				974A6BA122B095DB00CD75B5 /* CatPart2ViewController.swift */,
 				974A6BA322B0963200CD75B5 /* CatPart3ViewController.swift */,
+				974A6BA922B0A1BB00CD75B5 /* AnimationExtension.swift */,
 				974A6BA522B0987900CD75B5 /* BackgroundExtension.swift */,
 				974A6B8722B00A3D00CD75B5 /* Main.storyboard */,
 				974A6B8C22B00A4600CD75B5 /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				974A6B9A22B0913500CD75B5 /* DogPart1ViewController.swift in Sources */,
+				974A6BAA22B0A1BB00CD75B5 /* AnimationExtension.swift in Sources */,
 				974A6B9622B08E1400CD75B5 /* CharacterViewController.swift in Sources */,
 				974A6BA022B0958A00CD75B5 /* CatPart1ViewController.swift in Sources */,
 				974A6BA622B0987A00CD75B5 /* BackgroundExtension.swift in Sources */,
