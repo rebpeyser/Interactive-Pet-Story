@@ -86,6 +86,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkX-8U-Kzd" userLabel="Cat">
                                 <rect key="frame" x="192" y="243" width="257" height="248"/>
                                 <state key="normal" title="Button" image="CatButton"/>
+                                <connections>
+                                    <segue destination="evY-wi-LSt" kind="show" id="ZD4-va-aEQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,6 +116,177 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKK-gh-ZYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="872.79999999999995" y="132.68365817091455"/>
+        </scene>
+        <!--Cat Part 1 -->
+        <scene sceneID="z2p-dD-Qg4">
+            <objects>
+                <viewController title="Cat Part 1 " id="evY-wi-LSt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sgb-9X-ccV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wow! A kitten! To get started, what kind of toy do you want?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxs-Sp-IWC">
+                                <rect key="frame" x="22" y="80" width="330" height="147"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvC-Qc-PVZ" userLabel="Yarn">
+                                <rect key="frame" x="206" y="341" width="153" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="U8V-sX-4Um"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="YarnToy"/>
+                                <connections>
+                                    <segue destination="NyC-M1-d6E" kind="show" id="dKV-6Q-vlT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7R-jo-TYe" userLabel="Mouse">
+                                <rect key="frame" x="5" y="315" width="193" height="199"/>
+                                <state key="normal" title="Button" image="MouseToy"/>
+                                <connections>
+                                    <segue destination="mkL-tj-JlN" kind="show" id="e6G-Rj-zwT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mouse Toy!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iK8-cz-uiv">
+                                <rect key="frame" x="71" y="489" width="103" height="25"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yarn!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZU-if-P6y">
+                                <rect key="frame" x="246" y="487" width="53" height="27"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VZU-if-P6y" firstAttribute="top" secondItem="DvC-Qc-PVZ" secondAttribute="bottom" constant="31" id="29X-gt-gmC"/>
+                            <constraint firstItem="B7R-jo-TYe" firstAttribute="leading" secondItem="yVT-CQ-aRl" secondAttribute="leading" constant="5" id="8fD-KT-h74"/>
+                            <constraint firstItem="iK8-cz-uiv" firstAttribute="top" secondItem="B7R-jo-TYe" secondAttribute="bottom" constant="-25" id="E0x-BR-HWK"/>
+                            <constraint firstItem="VZU-if-P6y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="B7R-jo-TYe" secondAttribute="trailing" constant="8" symbolic="YES" id="H8Y-XT-qfQ"/>
+                            <constraint firstItem="yVT-CQ-aRl" firstAttribute="bottom" secondItem="B7R-jo-TYe" secondAttribute="bottom" constant="153" id="Omc-tv-DgZ"/>
+                            <constraint firstItem="DvC-Qc-PVZ" firstAttribute="leading" secondItem="B7R-jo-TYe" secondAttribute="trailing" constant="8" symbolic="YES" id="RIO-u5-hty"/>
+                            <constraint firstItem="DvC-Qc-PVZ" firstAttribute="leading" secondItem="VZU-if-P6y" secondAttribute="trailing" constant="-93" id="TfQ-YS-1QB"/>
+                            <constraint firstItem="Zxs-Sp-IWC" firstAttribute="top" secondItem="yVT-CQ-aRl" secondAttribute="top" constant="60" id="Vee-CQ-uoo"/>
+                            <constraint firstItem="B7R-jo-TYe" firstAttribute="top" secondItem="Zxs-Sp-IWC" secondAttribute="bottom" constant="88" id="XKk-zi-zZS"/>
+                            <constraint firstItem="yVT-CQ-aRl" firstAttribute="trailing" secondItem="Zxs-Sp-IWC" secondAttribute="trailing" constant="23" id="ahx-fF-nXK"/>
+                            <constraint firstItem="DvC-Qc-PVZ" firstAttribute="trailing" secondItem="Sgb-9X-ccV" secondAttribute="trailingMargin" id="gpL-Y4-Req"/>
+                            <constraint firstItem="DvC-Qc-PVZ" firstAttribute="leading" secondItem="yVT-CQ-aRl" secondAttribute="leading" constant="206" id="kGN-CB-4a7"/>
+                            <constraint firstItem="yVT-CQ-aRl" firstAttribute="bottom" secondItem="Zxs-Sp-IWC" secondAttribute="bottom" constant="440" id="lkp-sF-bAC"/>
+                            <constraint firstItem="yVT-CQ-aRl" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iK8-cz-uiv" secondAttribute="trailing" symbolic="YES" id="rQh-b3-4vW"/>
+                            <constraint firstItem="yVT-CQ-aRl" firstAttribute="bottom" secondItem="DvC-Qc-PVZ" secondAttribute="bottom" constant="211" id="w7Y-37-q8r"/>
+                            <constraint firstItem="iK8-cz-uiv" firstAttribute="leading" secondItem="B7R-jo-TYe" secondAttribute="trailing" constant="-127" id="xfS-SN-ouN"/>
+                            <constraint firstItem="Zxs-Sp-IWC" firstAttribute="leading" secondItem="yVT-CQ-aRl" secondAttribute="leading" constant="22" id="xmB-5h-iiH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yVT-CQ-aRl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hO-eT-d6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736.8" y="630.13493253373315"/>
+        </scene>
+        <!--Cat Part 2- Mouse-->
+        <scene sceneID="fe2-rx-lXA">
+            <objects>
+                <viewController title="Cat Part 2- Mouse" id="mkL-tj-JlN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qB6-dc-tO7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How cute!! I think your kitten really likes the mouse toy! Have fun!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPh-tg-6Ue">
+                                <rect key="frame" x="16" y="101" width="343" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="ZaX-MW-EMz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CatFinal" translatesAutoresizingMaskIntoConstraints="NO" id="29X-kc-4pT">
+                                <rect key="frame" x="36" y="269" width="306" height="183"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMg-8N-sKo">
+                                <rect key="frame" x="299" y="589" width="41" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.74953149240000005" blue="0.35813811940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.99487024199999996" green="1" blue="0.1637920246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kZe-iV-2Y8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IPh-tg-6Ue" firstAttribute="trailing" secondItem="qB6-dc-tO7" secondAttribute="trailingMargin" id="0wD-wI-JTh"/>
+                            <constraint firstItem="IPh-tg-6Ue" firstAttribute="top" secondItem="75g-Sd-lKZ" secondAttribute="top" constant="81" id="3uR-S1-5Aw"/>
+                            <constraint firstItem="75g-Sd-lKZ" firstAttribute="trailing" secondItem="29X-kc-4pT" secondAttribute="trailing" constant="33" id="7tf-QA-0rl"/>
+                            <constraint firstItem="75g-Sd-lKZ" firstAttribute="bottom" secondItem="29X-kc-4pT" secondAttribute="bottom" constant="215" id="8TC-PQ-KWV"/>
+                            <constraint firstItem="XMg-8N-sKo" firstAttribute="leading" secondItem="29X-kc-4pT" secondAttribute="trailing" constant="-43" id="CHI-Ub-mnl"/>
+                            <constraint firstItem="75g-Sd-lKZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XMg-8N-sKo" secondAttribute="trailing" symbolic="YES" id="FYG-yG-IPK"/>
+                            <constraint firstItem="29X-kc-4pT" firstAttribute="leading" secondItem="IPh-tg-6Ue" secondAttribute="trailing" constant="-323" id="KRg-8J-DFf"/>
+                            <constraint firstItem="29X-kc-4pT" firstAttribute="top" secondItem="IPh-tg-6Ue" secondAttribute="bottom" constant="45" id="b7i-hK-8nG"/>
+                            <constraint firstItem="IPh-tg-6Ue" firstAttribute="leading" secondItem="qB6-dc-tO7" secondAttribute="leadingMargin" id="qvm-Ug-poQ"/>
+                            <constraint firstItem="XMg-8N-sKo" firstAttribute="top" secondItem="29X-kc-4pT" secondAttribute="bottom" constant="137" id="sfc-H1-Xbc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="75g-Sd-lKZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJ1-qD-pMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2624.8000000000002" y="701.19940029985014"/>
+        </scene>
+        <!--Cat Part 3- Yarn-->
+        <scene sceneID="4w4-Tq-2Yv">
+            <objects>
+                <viewController title="Cat Part 3- Yarn" id="NyC-M1-d6E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8pl-tp-Dts">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looks like your kitten loves the yarn! I hope you both have lots of good times together!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itB-aC-uE6">
+                                <rect key="frame" x="16" y="73" width="343" height="165"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CatWYarn" translatesAutoresizingMaskIntoConstraints="NO" id="BtX-Yj-kSA">
+                                <rect key="frame" x="38" y="269" width="281" height="192"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCj-BI-a1e">
+                                <rect key="frame" x="306" y="617" width="41" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.74953149240000005" blue="0.35813811940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.99487024199999996" green="1" blue="0.1637920246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Fet-yB-bZg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hK0-Xi-9nI" firstAttribute="bottom" secondItem="itB-aC-uE6" secondAttribute="bottom" constant="429" id="19m-SN-mTX"/>
+                            <constraint firstItem="hK0-Xi-9nI" firstAttribute="trailing" secondItem="BtX-Yj-kSA" secondAttribute="trailing" constant="56" id="BYg-Yh-EbR"/>
+                            <constraint firstItem="nCj-BI-a1e" firstAttribute="top" secondItem="BtX-Yj-kSA" secondAttribute="bottom" constant="156" id="JmH-te-F3o"/>
+                            <constraint firstItem="hK0-Xi-9nI" firstAttribute="bottom" secondItem="BtX-Yj-kSA" secondAttribute="bottom" constant="206" id="L5s-7l-F2p"/>
+                            <constraint firstItem="itB-aC-uE6" firstAttribute="leading" secondItem="hK0-Xi-9nI" secondAttribute="leading" constant="16" id="MTT-Xp-XBs"/>
+                            <constraint firstItem="nCj-BI-a1e" firstAttribute="leading" secondItem="BtX-Yj-kSA" secondAttribute="trailing" constant="-13" id="Pvl-XV-EJ0"/>
+                            <constraint firstItem="BtX-Yj-kSA" firstAttribute="leading" secondItem="hK0-Xi-9nI" secondAttribute="leading" constant="38" id="Szb-pt-Wvh"/>
+                            <constraint firstItem="BtX-Yj-kSA" firstAttribute="top" secondItem="itB-aC-uE6" secondAttribute="bottom" constant="31" id="ekD-Xv-OVo"/>
+                            <constraint firstItem="hK0-Xi-9nI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nCj-BI-a1e" secondAttribute="trailing" symbolic="YES" id="ibS-on-Qzn"/>
+                            <constraint firstItem="hK0-Xi-9nI" firstAttribute="trailing" secondItem="itB-aC-uE6" secondAttribute="trailing" constant="16" id="jjq-YN-WhF"/>
+                            <constraint firstItem="itB-aC-uE6" firstAttribute="top" secondItem="hK0-Xi-9nI" secondAttribute="top" constant="53" id="spK-E9-4Lr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hK0-Xi-9nI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Duh-gB-xnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2601" y="1497"/>
         </scene>
         <!--Dog Part 1-->
         <scene sceneID="bHC-31-2HP">
@@ -287,12 +461,16 @@
     <resources>
         <image name="BallButton" width="490" height="490"/>
         <image name="CatButton" width="203" height="248"/>
+        <image name="CatFinal" width="600" height="450"/>
+        <image name="CatWYarn" width="1300" height="895"/>
         <image name="DogButton" width="189" height="266"/>
         <image name="DogRope" width="500" height="367"/>
+        <image name="MouseToy" width="1300" height="1300"/>
         <image name="Playing" width="1300" height="1033"/>
         <image name="RopeButton" width="235" height="215"/>
+        <image name="YarnToy" width="425" height="237"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0Pj-2X-qzN"/>
+        <segue reference="Fet-yB-bZg"/>
     </inferredMetricsTieBreakers>
 </document>
