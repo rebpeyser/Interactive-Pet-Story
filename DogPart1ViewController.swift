@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import Foundation
 
 class DogPart1ViewController: UIViewController {
 
     @IBOutlet weak var dogPart1Label: UILabel!
+    let backgroundImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        backgroundImageView.setBackground(imageName: "earth", backgroundImageView:
+            backgroundImageView, view: view)
     }
     
 

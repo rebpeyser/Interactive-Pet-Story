@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import Foundation
 
 class CatPart1ViewController: UIViewController {
 
     @IBOutlet weak var catPart1Label: UILabel!
+    let backgroundImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        backgroundImageView.setBackground(imageName: "earth", backgroundImageView:
+            backgroundImageView, view: view)
     }
     
 

@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import Foundation
 
 class CharacterViewController: UIViewController {
 
-    @IBOutlet weak var instuctionsLabel: UILabel!
+    @IBOutlet weak var instuctionLabel: UILabel!
+    let backgroundImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        backgroundImageView.setBackground(imageName: "earth", backgroundImageView:
+            backgroundImageView, view: view)
     }
     
 

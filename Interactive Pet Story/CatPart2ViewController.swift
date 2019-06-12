@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import Foundation
 
 class CatPart2ViewController: UIViewController {
 
     @IBOutlet weak var catPart2Label: UILabel!
+    let backgroundImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        backgroundImageView.setBackground(imageName: "moon", backgroundImageView:
+            backgroundImageView, view: view)
     }
     
 

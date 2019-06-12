@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
 
+    let backgroundImageView = UIImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        backgroundImageView.setBackground(imageName: "space", backgroundImageView:
+            backgroundImageView, view: view)
     }
 
 
