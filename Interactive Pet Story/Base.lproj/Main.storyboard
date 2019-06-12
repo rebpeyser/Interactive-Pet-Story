@@ -53,7 +53,7 @@
         <!--Character View Controller-->
         <scene sceneID="aGP-T7-bRh">
             <objects>
-                <viewController title="Character View Controller" id="SZY-Pd-ciX" sceneMemberID="viewController">
+                <viewController title="Character View Controller" id="SZY-Pd-ciX" customClass="CharacterViewController" customModule="Interactive_Pet_Story" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jCC-fK-eBK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,6 +112,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2co-dp-SDV"/>
                     </view>
+                    <connections>
+                        <outlet property="instuctionLabel" destination="yM6-lU-ctM" id="Y8m-TL-0h7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKK-gh-ZYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,7 +123,7 @@
         <!--Cat Part 1 -->
         <scene sceneID="z2p-dD-Qg4">
             <objects>
-                <viewController title="Cat Part 1 " id="evY-wi-LSt" sceneMemberID="viewController">
+                <viewController title="Cat Part 1 " id="evY-wi-LSt" customClass="CatPart1ViewController" customModule="Interactive_Pet_Story" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sgb-9X-ccV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +186,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yVT-CQ-aRl"/>
                     </view>
+                    <connections>
+                        <outlet property="catPart1Label" destination="Zxs-Sp-IWC" id="sT7-fk-kPC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8hO-eT-d6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,7 +197,7 @@
         <!--Cat Part 2- Mouse-->
         <scene sceneID="fe2-rx-lXA">
             <objects>
-                <viewController title="Cat Part 2- Mouse" id="mkL-tj-JlN" sceneMemberID="viewController">
+                <viewController title="Cat Part 2- Mouse" id="mkL-tj-JlN" customClass="CatPart2ViewController" customModule="Interactive_Pet_Story" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qB6-dc-tO7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,6 +240,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="75g-Sd-lKZ"/>
                     </view>
+                    <connections>
+                        <outlet property="catPart2Label" destination="IPh-tg-6Ue" id="ogF-0A-xNJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJ1-qD-pMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -242,7 +251,7 @@
         <!--Cat Part 3- Yarn-->
         <scene sceneID="4w4-Tq-2Yv">
             <objects>
-                <viewController title="Cat Part 3- Yarn" id="NyC-M1-d6E" sceneMemberID="viewController">
+                <viewController title="Cat Part 3- Yarn" id="NyC-M1-d6E" customClass="CatPart3ViewController" customModule="Interactive_Pet_Story" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8pl-tp-Dts">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,6 +292,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hK0-Xi-9nI"/>
                     </view>
+                    <connections>
+                        <outlet property="catPart3Label" destination="itB-aC-uE6" id="yK4-qi-LTK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Duh-gB-xnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,7 +303,7 @@
         <!--Dog Part 1-->
         <scene sceneID="bHC-31-2HP">
             <objects>
-                <viewController title="Dog Part 1" id="6cu-6H-vAn" sceneMemberID="viewController">
+                <viewController title="Dog Part 1" id="6cu-6H-vAn" customClass="DogPart1ViewController" customModule="Interactive_Pet_Story" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9g-Ll-8CZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,6 +366,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yu4-Ri-hzN"/>
                     </view>
+                    <connections>
+                        <outlet property="DogPart1Label" destination="HLo-xZ-doz" id="eFG-xe-wua"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDC-79-Fdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -362,7 +377,7 @@
         <!--Dog Part 3- Rope-->
         <scene sceneID="wKq-1D-3rS">
             <objects>
-                <viewController title="Dog Part 3- Rope" id="33v-zy-2di" sceneMemberID="viewController">
+                <viewController title="Dog Part 3- Rope" id="33v-zy-2di" customClass="DogPart3ViewController" customModule="Interactive_Pet_Story" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4lk-2L-R0F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,6 +418,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5oY-Uf-ox1"/>
                     </view>
+                    <connections>
+                        <outlet property="dogPart3Label" destination="EZ0-dI-yYA" id="cCE-sz-ibN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1a-kJ-uPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,7 +429,7 @@
         <!--Dog Part 2- Ball-->
         <scene sceneID="YjW-gG-RnB">
             <objects>
-                <viewController title="Dog Part 2- Ball" id="YmK-LS-5rw" sceneMemberID="viewController">
+                <viewController title="Dog Part 2- Ball" id="YmK-LS-5rw" customClass="DogPart2ViewController" customModule="Interactive_Pet_Story" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HeN-0E-do2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -452,6 +470,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vB9-H5-nXw"/>
                     </view>
+                    <connections>
+                        <outlet property="DogPart2Label" destination="q6V-OP-xMJ" id="gtK-rd-aC3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQ6-Oi-c8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
